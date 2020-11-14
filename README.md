@@ -4,7 +4,7 @@
 
 This is job listing and saving platform. The jobs are fetched from Torre.
 
-P.S The api is built with ActiveJob. The frontend of the app retrieves a list of job opportunities from the frontend and you can choose to save any job. When you click a button to do that, the id of the job is sent to the rails backend and details of this job can further be gotten via another endpoint. For the reason, the Rails ActiveJob is been used to make a call to the third party endpoint and it performs the job of retrieving, updating and saving the job with the fetched details. This saved job is then served back via json to the frontend.
+P.S The api is built with ActiveJob. The frontend of the app retrieves a list of job opportunities from Torre and you can choose to save any job opportunity. When you click the button to do that, the id of the job opportunity is sent to the rails backend and details of this job opportunity can further be gotten via another endpoint. For the reason, the Rails ActiveJob is been used to make a call to the third party endpoint and it performs the Job of retrieving, updating and saving the job opportunity with the fetched details. This way, the frontend application will not be unhold because you're trying to save a job opportunity whose details you'll have to visit a different endpoint to get. This saved job opportunity is then served back via json to the frontend.
 
 Specification summary:
 
