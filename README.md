@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is job listing platforms and saving platforms. The jobs are fetched from Torre.
+This is job listing and saving platform. The jobs are fetched from Torre.
 
 Specification summary:
 
@@ -68,8 +68,8 @@ rails s
 
 ## Live Version
 
-This is the link to the online version - 
-[Oppo]()
+This is served at - 
+[Oppo](https://obscure-castle-68155.herokuapp.com/opportunities)
 
 
 ## Author
