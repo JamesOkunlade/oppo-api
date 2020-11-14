@@ -1,24 +1,79 @@
-# README
+# Oppo -  Rails API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+This is job listing platforms and saving platforms. The jobs are fetched from Torre.
 
-* Ruby version
+Specification summary:
 
-* System dependencies
+- RESTful api.
+- Patterns and good practices.
+- Setup scripts.
+- Postgres database.
 
-* Configuration
+## Requirements
 
-* Database creation
+- Ruby version 2.6.2
 
-* Database initialization
+- Rails version 6.0.3
 
-* How to run the test suite
+- Postgres
 
-* Services (job queues, cache servers, search engines, etc.)
+## Installation
 
-* Deployment instructions
+- Clone the repository and get inside it:
 
-* ...
+```
+git clone git@github.com:JamesOkunlade/oppo-api.git
+
+cd oppo-api
+```
+
+- Install all gems:
+
+```
+bundle install
+```
+
+- Create a postgres database:
+
+```
+rails db:create
+```
+
+- Migrate database
+
+```
+rails db:migrate
+```
+
+- Start the server
+
+```
+rails s
+```
+
+## Technology Used
+
+- Rails api
+- Postgres
+
+### API Endpoints
+
+| API Endpoint                      | Functionality                           |
+| ----------------------------------| --------------------------------------- |
+| GET /opportunities     | Fetches a list of saved jobs   |
+| POST /opportunities  | Saves a new job   |
+| DELETE /opportunities/:id     | Deletes a job by Id   |
+
+## Live Version
+
+This is the link to the online version - 
+[Oppo]()
+
+
+## Author
+
+James Okunlade
+
+- [Github profile](https://github.com/JamesOkunlade)
