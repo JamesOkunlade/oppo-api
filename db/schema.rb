@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_14_090146) do
+ActiveRecord::Schema.define(version: 2020_11_14_094142) do
 
   create_table "opportunities", force: :cascade do |t|
     t.string "objective"
     t.text "details"
-    t.integer "oppo_id"
+    t.string "oppo_id"
     t.string "slug"
     t.string "compensation"
     t.datetime "created_at", precision: 6, null: false
