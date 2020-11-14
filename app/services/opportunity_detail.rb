@@ -31,8 +31,7 @@ class OpportunityDetail
     end
 
     def update_opportunity(objective, details, slug, compensation)
-        # @opportunity.update_attribute(:objective, objective)
-        @opportunity.attributes = { objective: objective, details: details, slug: slug, compensation: compensation }
-        @opportunity.save
+      @opportunity.attributes = { objective: objective, details: details, slug: slug, compensation: compensation }
+      @opportunity.save
     end
 end

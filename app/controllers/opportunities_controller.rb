@@ -1,13 +1,11 @@
 class OpportunitiesController < ApplicationController
   before_action :set_opportunity, only: [:show, :destroy]
 
-  # GET /todos
   def index
     @opportunities = Opportunity.all
     json_response(@opportunities)
   end
 
-  # POST /todos
   def create
     @opportunity = Opportunity.create!(opportunity_params)
     json_response(@opportunity, :created)
