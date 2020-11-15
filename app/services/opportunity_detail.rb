@@ -1,6 +1,5 @@
 class OpportunityDetail
     attr_reader :oppo_id
-    # attr_accessor
 
     def initialize(opportunity)
         @opportunity = opportunity
@@ -31,7 +30,6 @@ class OpportunityDetail
     end
 
     def update_opportunity(objective, details, slug, compensation)
-      @opportunity.attributes = { objective: objective, details: details, slug: slug, compensation: compensation }
-      @opportunity.save
+      @opportunity.update_columns(objective: objective, details: details, slug: slug, compensation: compensation)
     end
 end
